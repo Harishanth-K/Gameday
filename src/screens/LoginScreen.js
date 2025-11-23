@@ -170,26 +170,6 @@ const LoginScreen = ({ navigation }) => {
       marginLeft: 8,
       textDecorationLine: 'underline',
     },
-    demoCredentials: {
-      marginTop: 35,
-      padding: 20,
-      backgroundColor: 'rgba(255, 255, 255, 0.15)',
-      borderRadius: 15,
-      borderWidth: 1,
-      borderColor: 'rgba(255, 255, 255, 0.2)',
-    },
-    demoTitle: {
-      fontSize: 16,
-      fontWeight: '700',
-      color: '#FFFFFF',
-      marginBottom: 12,
-    },
-    demoText: {
-      fontSize: 14,
-      color: 'rgba(255, 255, 255, 0.9)',
-      marginBottom: 6,
-      fontWeight: '500',
-    },
   });
 
   return (
@@ -264,12 +244,6 @@ const LoginScreen = ({ navigation }) => {
             <TouchableOpacity onPress={() => navigation.navigate('Register')}>
               <Text style={styles.registerLink}>Register</Text>
             </TouchableOpacity>
-          </View>
-
-          <View style={styles.demoCredentials}>
-            <Text style={styles.demoTitle}>Demo Credentials:</Text>
-            <Text style={styles.demoText}>Username: emilys</Text>
-            <Text style={styles.demoText}>Password: emilyspass</Text>
           </View>
         </View>
       </ScrollView>
