@@ -28,10 +28,7 @@ const MatchDetailScreen = ({ route }) => {
     } else {
       dispatch(addFavorite(match));
     }
-    const updatedFavorites = isFavorite
-      ? favorites.filter((fav) => fav.idEvent !== match.idEvent)
-      : [...favorites, match];
-    dispatch(saveFavorites(updatedFavorites));
+    dispatch(saveFavorites());
   };
 
   const formatDate = (dateString) => {
